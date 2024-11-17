@@ -1,0 +1,71 @@
+/* Footer Styles */
+.footer {
+    background-color: #F5F2AD; /* Light background */
+    color: #4A3C29; /* Dark text color */
+    padding: 20px 50px; /* Reduced padding for a smaller footer */
+    text-align: center; /* Centered text */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the items */
+  }
+  
+  .contact-info {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+  
+  .social-media {
+    margin: 0; /* Remove margin for alignment */
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icons li {
+    list-style: none; /* Remove default list styling */
+  }
+  
+  .social-icons li a {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #4A3C29; /* Dark color for icons */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .social-icons li a:hover {
+    color: #ff5733; /* Change color on hover */
+  }
+  .gmail-part{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .gmail-part a{
+    color: #4A3C29;
+  }
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 10px; /* Space above the copyright section */
+    border-top: 1px solid #4A3C29; /* Subtle border for separation */
+    padding-top: 10px; /* Space for padding */
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem; /* Smaller font size for copyright */
+    color: #4A3C29; /* Dark text color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items */
+    }
+  }
+  

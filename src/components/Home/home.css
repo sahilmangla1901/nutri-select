@@ -1,0 +1,241 @@
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('../../data/heroImage.avif') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+.hero-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #ff5733;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c93d1a;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Category Section */
+.category-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+
+.category-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+  width: 300px;
+  background-color: #ffb703;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  @media (max-width: 800px) {
+    width: 90%;
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  @media (max-width: 800px) {
+    font-size: 1.25rem;
+  }
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  @media (max-width: 800px) {
+    font-size: 0.875rem;
+  }
+}
+
+.card-link {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card-link:hover {
+  background-color: #ff5733;
+}
+
+.parallax-section {
+  background: url('../../data/mustard.jpg') no-repeat center center fixed;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: block;
+}
+.parallax-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+}
+
+.parallax-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  @media (max-width: 800px) {
+    font-size: 1.875rem;
+  }
+}
+
+.parallax-content p {
+  font-size: 1.3rem;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
+/* Call to Action */
+.cta-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  @media (max-width: 800px) {
+    font-size: 1.875rem;
+  }
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
+.cta-section .btn-primary {
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  background-color: #ff5733;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #c93d1a;
+}

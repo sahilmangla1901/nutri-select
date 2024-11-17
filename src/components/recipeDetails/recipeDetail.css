@@ -1,0 +1,34 @@
+/* src/components/RecipeDetail.css */
+
+.recipe-detail-container {
+    padding: 20px;
+    max-width: 100vw;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.recipe-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    flex: 4;
+}
+.recipe-details{
+    flex: 5;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #FF6347;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

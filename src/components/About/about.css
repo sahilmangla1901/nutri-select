@@ -1,0 +1,82 @@
+/* src/components/About.css */
+
+.about-container {
+    padding: 20px;
+    max-width: 100%; /* Limit width for better readability */
+    margin: auto; /* Center the content */
+    font-family: 'Arial', sans-serif; /* Choose a readable font */
+}
+
+.about-title {
+    text-align: center; /* Center title */
+    margin-bottom: 20px;
+    color: #333; /* Dark text for visibility */
+}
+
+.section-heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    @media (max-width: 800px) {
+        font-size: 22px;
+    }
+}
+.section-body{
+    font-size: 16px;
+    text-align: center;
+    @media (max-width: 800px) {
+       font-size: 14px;
+    }
+}
+.about-logo {
+    display: block;
+    margin: 0 auto 20px; /* Center logo */
+    width: 150px; /* Adjust width as needed */
+}
+
+.about-card {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 40px; /* Space between cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #333;
+    color: white;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.about-card.reverse {
+    flex-direction: row-reverse; /* Reverse order for alternating layout */
+}
+
+.about-image {
+    width: 40%; /* Adjust size for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    @media (max-width: 800px) {
+        width: 90%;
+    }
+}
+
+.about-text {
+    width: 60%; /* Control the width of the text */
+    padding: 20px; /* Padding around the text */
+    @media (max-width: 800px) {
+        width: 80%;
+    }
+}
+
+.about-section h2 {
+    color: #FF6347; /* Accent color */
+}
+
+.about-section ul {
+    list-style-type: disc; /* Default bullet points */
+    margin-left: 20px; /* Indentation for bullet points */
+}
+
+.about-section p {
+    line-height: 1.6; /* Improved readability */
+}
