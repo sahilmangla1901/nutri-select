@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5be5ebac.css",
-    "main.js": "/static/js/main.99288feb.js",
+    "main.js": "/static/js/main.98103b15.js",
     "static/js/453.3ba23e44.chunk.js": "/static/js/453.3ba23e44.chunk.js",
     "static/media/stuffed-paneer-paratha.jpg": "/static/media/stuffed-paneer-paratha.83ebe7f11e5611314f05.jpg",
     "static/media/story.PNG": "/static/media/story.eeccc99d0d513a676c17.PNG",
@@ -34,11 +34,11 @@
     "static/media/puran-poli.jpg": "/static/media/puran-poli.f165c4262060e7a8528d.jpg",
     "index.html": "/index.html",
     "main.5be5ebac.css.map": "/static/css/main.5be5ebac.css.map",
-    "main.99288feb.js.map": "/static/js/main.99288feb.js.map",
+    "main.98103b15.js.map": "/static/js/main.98103b15.js.map",
     "453.3ba23e44.chunk.js.map": "/static/js/453.3ba23e44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5be5ebac.css",
-    "static/js/main.99288feb.js"
+    "static/js/main.98103b15.js"
   ]
 }
