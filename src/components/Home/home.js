@@ -31,7 +31,7 @@ const Home = () => {
           <div className="card oil-card">
             <div className="card-content">
               <h3>Oils</h3>
-              <p>Cold-pressed, natural oils that bring health and flavor to every dish.</p>
+              <p>Cold-pressed, naturally filtered, natural oils that bring health and flavor to every dish.</p>
               <Link to="/products/2" className="card-link">Explore Oils</Link>
             </div>
           </div>

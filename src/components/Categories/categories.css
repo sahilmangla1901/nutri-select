@@ -1,9 +1,9 @@
-.products-page {
+/* .products-page {
     margin-bottom: 20px;
     display: flex;
     padding:20px;
-    gap: 20px;
-    @media (max-width: 1200px) {
+    gap: 50px;
+    @media (max-width: 800px) {
       flex-direction: column;
   }
   }
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex:2;
+    flex:3;
   }
   
   .product-item {
@@ -29,8 +29,23 @@
   .back-btn:hover {
     background-color: #0056b3;
   }
-  .coming-soon{
+  .coming-soon-image{
+    flex: 2;
+    display:flex;
+    gap: 20px;
+  }
+  .images-array{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .image-array{
+    width: 90%;
+  }
+  .main-image{
+    flex: 4;
+    max-height:90vh;
   }
   .product-benefits{
     display: flex;
@@ -46,4 +61,207 @@
   .tick-image{
     margin-right: 10px;
   }
-  
+   */
+/* Container Styling */
+/* General Container */
+.product-container {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.product-hero {
+  padding: 20px 0;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a3c29;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.product-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4caf50;
+  margin: 10px auto;
+}
+
+/* Responsive Grid */
+.product-grid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Product Images */
+.product-images {
+  flex: 2;
+  max-width: 600px;
+}
+
+.image-frame {
+  border: 3px solid #4caf50;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.main-image {
+  width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Title Styling */
+.quantity-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4A3C29;
+  margin-bottom: 20px;
+}
+
+/* Container for Pills */
+.quantity-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin:30px 0px;
+}
+
+/* Quantity Pills */
+.quantity-pill {
+  padding: 14px 24px;
+  border-radius: 50px; /* Fully rounded */
+  background-color: #F0E6D2; /* Soft beige */
+  color: #4A3C29; /* Warm brown */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover Effect */
+.quantity-pill:hover {
+  background-color: #C0A56F;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* 🔥 Selected Pill Styling */
+.quantity-pill.selected {
+  background-color: #C0A56F; /* Muted gold */
+  color: white;
+  border: 3px solid #8B6F3D; /* Darker gold border */
+  transform: scale(1.1); /* Make it pop */
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+/* Thumbnail Images */
+.thumbnail-container {
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  transform: scale(1.1);
+  border: 2px solid #4caf50;
+}
+
+/* Product Details */
+.product-details {
+  flex: 3;
+  text-align: left;
+}
+
+.product-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Benefits Section */
+.benefits-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-item {
+  font-size: 1rem;
+  background: #f0f8e0;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid #4caf50;
+  transition: background 0.3s;
+}
+
+.benefit-item:hover {
+  background: #d4edda;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .product-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-description {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.5rem;
+  }
+}

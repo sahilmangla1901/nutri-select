@@ -17,7 +17,7 @@ const App = () => {
         <Router>
             <div>
                 <NavBar />
-                <div className='background-black'>
+                <div className='background-black' style={{minHeight:"70vh"}}>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />

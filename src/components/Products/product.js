@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './product.css';
-import comingSoon from './comingsoon.png';
+import combineProduct from './combineProduct.png';
+import combineProductMobile from './combineProductMobile.png';
 import comingSoon2 from './comingsoon2.png';
 const Product = () => {
   const categories = [
@@ -11,12 +12,13 @@ const Product = () => {
 
   return (
     <div className="categories-page">
-      <img className='coming-soon' src={comingSoon} alt="coming-soon"/>
+      <img className='coming-soon desktop-view' src={combineProduct} alt="products"/>
+      <img className='coming-soon mobile-view' src={combineProductMobile} alt="products"/>
       <div className="category-list">
         {categories.map(category => (
           <div key={category.id} className="category-item">
-            <h2 className='product-heading'>{category.name}</h2>
-            <p className='product-description'>{category.description}</p>
+            <h2 className='product-heading-plp'>{category.name}</h2>
+            <p className='product-description-plp'>{category.description}</p>
             <Link to={`/products/${category.id}`} className="view-products-btn">View Products</Link>
           </div>
         ))}

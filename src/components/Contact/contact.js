@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './contact.css';
 
 const Contact = () => {
-  const [query, setQuery] = useState({ name: '', address: '', phone: '', type:'', message: '' });
+  const [query, setQuery] = useState({ name: '', address: '', city: '', phone: '', type:'', message: '' });
   const [partner, setPartner] = useState({ businessName: '', contactName: '', address: '', phone: '', type: '', message: '' });
 
   const handleQueryChange = (e) => setQuery({ ...query, [e.target.name]: e.target.value });
@@ -51,25 +51,26 @@ const Contact = () => {
         {/* Queries Form */}
         <form id="query-submit" className="contact-form" onSubmit={handleQuerySubmit}>
           <h2>Submit Feedback</h2>
-          <input type="text" name="name" placeholder="Your Name" value={query.name} onChange={handleQueryChange} required />
-          <input type="text" name="address" placeholder="Your Address" value={query.address} onChange={handleQueryChange} required />
-          <input type="text" name="phone" placeholder="Your Phone Number (Optional)" value={query.phone} onChange={handleQueryChange} />
+          <input type="text" name="name" placeholder="Enter Name" value={query.name} onChange={handleQueryChange} required />
+          <input type="text" name="address" placeholder="Enter Address" value={query.address} onChange={handleQueryChange} required />
+          <input type="text" name="city" placeholder="Enter City (Optional)" value={query.city} onChange={handleQueryChange} />
+          <input type="text" name="phone" placeholder="Enter Phone Number (Optional)" value={query.phone} onChange={handleQueryChange} />
           <select name="type" value={query.type} onChange={handleQueryChange} required>
             <option value="">Select Product</option>
             <option value="Wheat Flour">Wheat Flour</option>
             <option value="Mustard Oil">Mustard Oil</option>
           </select>
           <textarea name="message" placeholder="Your Feedback" value={query.message} onChange={handleQueryChange} required></textarea>
-          <button type="submit">Submit Feedback</button>
+          <button type="submit" className="btn-primary feedback-button">Submit Feedback</button>
         </form>
 
         {/* Partner with Us Form */}
         <form id="partner-with-us" className="partner-form" onSubmit={handlePartnerSubmit}>
           <h2>Partner with Us</h2>
-          <input type="text" name="businessName" placeholder="Business Name" value={partner.businessName} onChange={handlePartnerChange} required />
-          <input type="text" name="contactName" placeholder="Contact Person's Name" value={partner.contactName} onChange={handlePartnerChange} required />
-          <input type="text" name="address" placeholder="Your Business Address" value={partner.address} onChange={handlePartnerChange} required />
-          <input type="text" name="phone" placeholder="Your Phone Number" value={partner.phone} onChange={handlePartnerChange} required />
+          <input type="text" name="businessName" placeholder="Enter Business Name" value={partner.businessName} onChange={handlePartnerChange} required />
+          <input type="text" name="contactName" placeholder="Enter Contact Person's Name" value={partner.contactName} onChange={handlePartnerChange} required />
+          <input type="text" name="address" placeholder="Enter Business Address" value={partner.address} onChange={handlePartnerChange} required />
+          <input type="text" name="phone" placeholder="Enter Phone Number" value={partner.phone} onChange={handlePartnerChange} required />
           <select name="type" value={partner.type} onChange={handlePartnerChange} required>
             <option value="">Type of Partnership</option>
             <option value="Distributor">Distributor</option>
@@ -78,7 +79,7 @@ const Contact = () => {
             <option value="Other">Other</option>
           </select>
           <textarea name="message" placeholder="Additional Details" value={partner.message} onChange={handlePartnerChange} required></textarea>
-          <button type="submit">Send Request</button>
+          <button type="submit" className='btn-primary feedback-button'>Send Request</button>
         </form>
       </div>
     </div>
