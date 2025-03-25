@@ -1,10 +1,10 @@
 // src/components/About.js
 import React from 'react';
 import './about.css'; // Import your CSS for styling
-import missionImage from './mission.png'; // Sample product image
-import storyImage from './story.PNG'; // Sample product image
-import teamImage from './team.png'; // Sample product image
-import visionImage from './vision.png'; // Sample product image
+import missionImage from './Mission.webp'; // Sample product image
+import storyImage from './story.webp'; // Sample product image
+import teamImage from './team.webp'; // Sample product image
+import visionImage from './vision.webp'; // Sample product image
 
 const About = () => {
     return (

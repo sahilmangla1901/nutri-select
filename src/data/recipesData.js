@@ -1,22 +1,20 @@
 // src/data/recipesData.js
-import AlooParatha from '../assets/aloo-paratha.jpg'
-import chapati from '../assets/chapati.jpg'
-import mustardOilPulao from '../assets/mustard-oil-vegetable-pulao.jpg'
-import attaPancakes from '../assets/atta-pancakes.jpg'
-import wholeWheatNaan from '../assets/whole-wheat-naan.jpg'
-import vegetableKachori from '../assets/vegetable-stuffed-kachori.jpg'
-import methiThepla from '../assets/methi-thepla.jpg'
-import RotiPizza from '../assets/roti-pizza.jpg'
-import wholeWheatChocolateCake from '../assets/whole-wheat-chocolate-cake.jpg'
-import dhokla from '../assets/dhokla.jpg'
-import attaBread from '../assets/atta-bread.jpg'
-import stuffedPaneerParatha from '../assets/stuffed-paneer-paratha.jpg'
-import attaFruitCake from '../assets/atta-fruit-cake.jpg'
-import wholeWheatIdli from '../assets/whole-wheat-idli.jpg'
-import puranPoli from '../assets/puran-poli.jpg'
-import masalaAttaDosa from '../assets/masala-atta-dosa.jpg'
-import AttaLadoo from '../assets/atta-ladoo.jpg'
-import wholeWheatKhichdi from '../assets/whole-wheat-khichdi.jpg'
+import AlooParatha from '../assets/AlooParantha.webp'
+import chapati from '../assets/Roti.webp'
+import mustardOilPulao from '../assets/Pulao.webp'
+import attaPancakes from '../assets/Pancake.webp'
+import wholeWheatNaan from '../assets/Naan.webp'
+import vegetableKachori from '../assets/Kachori.webp'
+import methiThepla from '../assets/methiThepla.webp'
+import RotiPizza from '../assets/pizza.webp'
+import wholeWheatChocolateCake from '../assets/ChocolateCake.webp'
+import dhokla from '../assets/Dhokla.webp'
+import attaBread from '../assets/AttaBread.webp'
+import stuffedPaneerParatha from '../assets/PaneerParantha.webp'
+import attaFruitCake from '../assets/FruitCake.webp'
+import wholeWheatIdli from '../assets/Idli.webp'
+import masalaAttaDosa from '../assets/Dosa.webp'
+import wholeWheatKhichdi from '../assets/khichdi.webp'
 const recipesData = [
     {
         id: 1,
@@ -276,25 +274,7 @@ const recipesData = [
         ]
     },
     {
-        id: 15,
-        title: "Puran Poli",
-        image:puranPoli,
-        description: "Sweet flatbread stuffed with a lentil filling.",
-        ingredients: [
-            "2 cups whole wheat flour (atta)",
-            "1 cup chana dal, cooked",
-            "1 cup jaggery, grated",
-            "1/2 tsp cardamom powder",
-            "Mustard oil for cooking"
-        ],
-        steps: [
-            "Make a dough with flour and water; let it rest.",
-            "Mash dal with jaggery and cardamom to make filling.",
-            "Roll out dough, fill with mixture, and cook on a skillet."
-        ]
-    },
-    {
-        id: 17,
+        id: 16,
         title: "Masala Atta Dosa",
         image: masalaAttaDosa,
         description: "Crispy dosas made with whole wheat flour and a spicy potato filling.",
@@ -312,25 +292,7 @@ const recipesData = [
         ]
     },
     {
-        id: 18,
-        title: "Atta Ladoo",
-        image: AttaLadoo,
-        description: "Healthy sweet balls made with roasted whole wheat flour and jaggery.",
-        ingredients: [
-            "2 cups whole wheat flour (atta)",
-            "1 cup jaggery, grated",
-            "1/2 cup ghee",
-            "1/2 cup nuts, chopped",
-            "1/2 tsp cardamom powder"
-        ],
-        steps: [
-            "Roast flour in ghee until golden.",
-            "Mix in jaggery, nuts, and cardamom.",
-            "Shape into small balls."
-        ]
-    },
-    {
-        id: 19,
+        id: 17,
         title: "Whole Wheat Khichdi",
         image: wholeWheatKhichdi,
         description: "Comforting dish made with rice, dal, and spices, using whole wheat.",
