@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src={Logo} alt="Company Logo" />
+          <img src={Logo} alt="Nutriselect Logo" />
         </div>
 
         {/* Social Media Icons */}
@@ -69,11 +69,6 @@ const Footer = () => {
           <p>New Mangla Atta Chakki, Near Co-operative Bank, Boha-151503, Mansa, Punjab</p>
           <p>Email:  <a href='mailto:nutriselect@nmacgroup.in'>nutriselect@nmacgroup.in</a></p>
         </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="footer-copyright">
-        <p>&copy; {new Date().getFullYear()} NutriSelect. All Rights Reserved.</p>
       </div>
     </footer>
   );

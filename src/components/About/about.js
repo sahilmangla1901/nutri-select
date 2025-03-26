@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div className="about-container">
             <div className="about-card">
-                <img src={storyImage} alt="Production Process" className="about-image" />
+                <img src={storyImage} alt="Our Story" className="about-image" />
                 <div className="about-text">
                     <h2 class="section-heading">Our Story</h2>
                     <p class="section-body">
@@ -27,7 +27,7 @@ const About = () => {
                         "To be the leading choice for families seeking authentic, high-quality food essentials, by delivering pure, nutritious, and responsibly crafted products that enhance everyday meals and promote healthier lifestyles."
                     </div>
                 </div>
-                <img src={visionImage} alt="Our Products" className="about-image" />
+                <img src={visionImage} alt="Our Vision" className="about-image" />
             </div>
 
             <div className="about-card">
@@ -49,7 +49,7 @@ const About = () => {
                         To deliver premium, wholesome, and responsibly crafted food essentials that enhance the health and well-being of our customers, while consistently upholding the highest standards of quality, transparency, and care.
                     </div>
                 </div>
-                <img src={missionImage} alt="Our Products" className="about-image" />
+                <img src={missionImage} alt="Our Mission" className="about-image" />
             </div>
         </div>
     );
